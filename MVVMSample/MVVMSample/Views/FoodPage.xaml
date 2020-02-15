@@ -8,11 +8,95 @@
     x:Name="FoodView"
     mc:Ignorable="d">
     <ContentPage.Content>
-        <StackLayout>
-            <Label
-                HorizontalOptions="CenterAndExpand"
-                Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Frame x:Name="FrameOne" Style="{StaticResource FrameStyle}">
+
+                        <StackLayout
+                            HorizontalOptions="CenterAndExpand"
+                            Orientation="Vertical"
+                            VerticalOptions="CenterAndExpand">
+                            <Image Source="cheeseburger" />
+                            <Label Style="{StaticResource ColorText}" Text="Comida Rapida" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame
+                        x:Name="FrameTwo"
+                        Grid.Column="1"
+                        Style="{StaticResource FrameStyle}">
+
+                        <StackLayout
+                            HorizontalOptions="CenterAndExpand"
+                            Orientation="Vertical"
+                            VerticalOptions="CenterAndExpand">
+                            <Image Source="restaurant" />
+                            <Label Style="{StaticResource ColorText}" Text="Restaurante" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame
+                        x:Name="FrameThree"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Style="{StaticResource FrameStyle}">
+
+                        <StackLayout
+                            HorizontalOptions="CenterAndExpand"
+                            Orientation="Vertical"
+                            VerticalOptions="CenterAndExpand">
+                            <Image Source="food" />
+                            <Label Style="{StaticResource ColorText}" Text="Bebidas" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame
+                        x:Name="FrameFourth"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Style="{StaticResource FrameStyle}">
+
+                        <StackLayout
+                            HorizontalOptions="CenterAndExpand"
+                            Orientation="Vertical"
+                            VerticalOptions="CenterAndExpand">
+                            <Image Source="corn" />
+                            <Label Style="{StaticResource ColorText}" Text="Vegetales" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame
+                        x:Name="FrameFive"
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Style="{StaticResource FrameStyle}">
+
+                        <StackLayout
+                            HorizontalOptions="CenterAndExpand"
+                            Orientation="Vertical"
+                            VerticalOptions="CenterAndExpand">
+                            <Image Source="Supermercado.png" />
+                            <Label Style="{StaticResource ColorText}" Text="Supermercado" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame
+                        x:Name="FrameSix"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Style="{StaticResource FrameStyle}">
+
+                        <StackLayout
+                            HorizontalOptions="CenterAndExpand"
+                            Orientation="Vertical"
+                            VerticalOptions="CenterAndExpand">
+                            <Image Source="mercado" />
+                            <Label Style="{StaticResource ColorText}" Text="Mercado" />
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

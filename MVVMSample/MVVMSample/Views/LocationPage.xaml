@@ -9,10 +9,17 @@
     mc:Ignorable="d">
     <ContentPage.Content>
         <StackLayout>
-            <Label
-                HorizontalOptions="CenterAndExpand"
-                Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" />
+            <ListView>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Santo Domingo</x:String>
+                        <x:String>San Juan</x:String>
+                        <x:String>Samana</x:String>
+                        <x:String>Puerto Plata</x:String>
+                        <x:String>Dajabon</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
