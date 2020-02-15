@@ -34,7 +34,10 @@
                         Grid.Row="1"
                         Grid.ColumnSpan="2"
                         Padding="20">
-                        <Entry x:Name="EntUserName" Placeholder="Username or email address" />
+                        <Entry
+                            x:Name="EntUserName"
+                            Placeholder="Username or email address"
+                            Text="{Binding Username, Mode=TwoWay}" />
                         <Entry
                             x:Name="EntPass"
                             IsPassword="True"
@@ -48,6 +51,7 @@
                         <Frame Style="{StaticResource FrameButtonStyle}">
                             <Button
                                 x:Name="LoginBtn"
+                                Command="{Binding Loginbtn}"
                                 Style="{StaticResource ButtonStyle}"
                                 Text="Log in" />
                         </Frame>

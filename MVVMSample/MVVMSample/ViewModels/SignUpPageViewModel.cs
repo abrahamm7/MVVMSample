@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MVVMSample.ViewModels
 {
-    class SignUpPageViewModel
+    public class SignUpPageViewModel
     {
     }
 }

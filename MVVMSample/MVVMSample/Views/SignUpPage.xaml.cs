@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVVMSample.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace MVVMSample.Views
         public SignUpPage()
         {
             InitializeComponent();
+            this.BindingContext = new SignUpPageViewModel();
         }
     }
 }
