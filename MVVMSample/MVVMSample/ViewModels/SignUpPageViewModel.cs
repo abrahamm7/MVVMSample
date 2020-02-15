@@ -16,12 +16,12 @@ namespace MVVMSample.ViewModels
         public string Email { get; set; }
 
         public ICommand Signupbtn { get { return new RelayCommand(SignUp); } }
-
+        //Event to Sign Up button//
         private async void SignUp()
         {
             if (string.IsNullOrEmpty(Name) || string.IsNullOrEmpty(Password) || string.IsNullOrEmpty(Repass) || string.IsNullOrEmpty(Email))
             {
-                await App.Current.MainPage.DisplayAlert("Error","Empty Fields","ok");
+                await App.Current.MainPage.DisplayAlert("Error","Empty fields","ok");
             }
             else
             {

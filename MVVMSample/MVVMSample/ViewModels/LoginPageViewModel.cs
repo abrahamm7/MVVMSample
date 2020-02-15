@@ -23,7 +23,7 @@ namespace MVVMSample.ViewModels
         {
             if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
             {
-                await App.Current.MainPage.DisplayAlert("Message", "The field Username is empty", "Ok");
+                await App.Current.MainPage.DisplayAlert("Error", "Empty fields", "Ok");
             }
             else
             {
