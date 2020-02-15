@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MVVMSample.Views.SignUpPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        Padding="35">
+                        <Image Aspect="AspectFit" Source="camera.png" />
+                        <Entry x:Name="EntUserName" Placeholder="Username or email address" />
+                        <Entry
+                            x:Name="EntPass"
+                            IsPassword="True"
+                            Placeholder="Password" />
+                        <Entry x:Name="NewEmail" Placeholder="Email address" />
+                        <Entry x:Name="NewUser" Placeholder="Username" />
+                        <Entry
+                            x:Name="NewPass"
+                            IsPassword="True"
+                            Placeholder="Password" />
+                        <Entry
+                            x:Name="ConfirmPass"
+                            IsPassword="True"
+                            Placeholder="Password" />
+                        <Button
+                            x:Name="SignBtn"
+                            Style="{StaticResource ButtonStyle}"
+                            Text="Sign Up" />
+                        <Label
+                            HorizontalOptions="CenterAndExpand"
+                            Style="{StaticResource ColorText}"
+                            Text="Terms of Services" />
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

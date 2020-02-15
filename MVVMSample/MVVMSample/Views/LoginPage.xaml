@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MVVMSample.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="SignBtn" Text="Sign Up" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Aspect="AspectFit"
+                        Source="usermale.png" />
+                    <StackLayout
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        Padding="20">
+                        <Entry x:Name="EntUserName" Placeholder="Username or email address" />
+                        <Entry
+                            x:Name="EntPass"
+                            IsPassword="True"
+                            Placeholder="Password" />
+                    </StackLayout>
+                    <StackLayout
+                        Grid.Row="2"
+                        Grid.ColumnSpan="2"
+                        Padding="15"
+                        HorizontalOptions="FillAndExpand">
+                        <Frame Style="{StaticResource FrameButtonStyle}">
+                            <Button
+                                x:Name="LoginBtn"
+                                Clicked="LoginBtn_Clicked"
+                                Style="{StaticResource ButtonStyle}"
+                                Text="Log in" />
+                        </Frame>
+                        <Label
+                            HorizontalOptions="CenterAndExpand"
+                            Style="{StaticResource ColorText}"
+                            Text="Login With" />
+                    </StackLayout>
+                    <StackLayout
+                        Grid.Row="3"
+                        Grid.ColumnSpan="2"
+                        HorizontalOptions="CenterAndExpand"
+                        Orientation="Horizontal">
+                        <Image Source="facebook.png" />
+                        <Image Source="github.png" />
+                        <Image Source="twitter.png" />
+                        <Image Source="google.png" />
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="MVVMSample.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ColorText" TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="18" />
+            </Style>
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="CornerRadius" Value="25" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="BorderColor" Value="Black" />
+                <Setter Property="TextColor" Value="#000000" />
+                <Setter Property="BorderWidth" Value="2" />
+                <Setter Property="Visual" Value="Material" />
+            </Style>
+            <Style x:Key="ButtonStyle2" TargetType="Button">
+                <Setter Property="CornerRadius" Value="25" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="#000000" />
+                <Setter Property="Visual" Value="Material" />
+            </Style>
+            <Style x:Key="FrameStyle" TargetType="Frame">
+                <Setter Property="BorderColor" Value="#FFFFFF" />
+                <Setter Property="HasShadow" Value="True" />
+                <Setter Property="Padding" Value="0" />
+            </Style>
+            <Style x:Key="FrameButtonStyle" TargetType="Frame">
+                <Setter Property="BorderColor" Value="#FFFFFF" />
+                <Setter Property="HasShadow" Value="True" />
+                <Setter Property="CornerRadius" Value="25" />
+                <Setter Property="Padding" Value="0" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
