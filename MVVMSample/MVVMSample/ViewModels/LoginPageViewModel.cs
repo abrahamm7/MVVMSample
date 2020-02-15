@@ -33,7 +33,7 @@ namespace MVVMSample.ViewModels
                 await App.Current.MainPage.Navigation.PushAsync(new MainContentPage(person));
             }
         }
-
+        //Event to button SignUp//
         private async void SignUp()
         {
             await App.Current.MainPage.Navigation.PushAsync(new SignUpPage());
