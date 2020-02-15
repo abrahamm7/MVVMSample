@@ -103,9 +103,21 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Assets\camera.png" />
+    <AndroidResource Include="Assets\cheeseburger.png" />
+    <AndroidResource Include="Assets\corn.png" />
+    <AndroidResource Include="Assets\Done.png" />
+    <AndroidResource Include="Assets\facebook.png" />
+    <AndroidResource Include="Assets\food.png" />
+    <AndroidResource Include="Assets\github.png" />
+    <AndroidResource Include="Assets\google.png" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />
+    <AndroidResource Include="Assets\mercado.png" />
+    <AndroidResource Include="Assets\restaurant.png" />
+    <AndroidResource Include="Assets\search.png" />
+    <AndroidResource Include="Assets\shopping.png" />
     <Content Include="Assets\SmallTile.scale-100.png" />
     <Content Include="Assets\SmallTile.scale-200.png" />
     <Content Include="Assets\SmallTile.scale-400.png" />
@@ -127,6 +139,9 @@
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-200.png" />
     <Content Include="Assets\StoreLogo.scale-400.png" />
+    <AndroidResource Include="Assets\Super.png" />
+    <AndroidResource Include="Assets\twitter.png" />
+    <AndroidResource Include="Assets\usermale.png" />
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />

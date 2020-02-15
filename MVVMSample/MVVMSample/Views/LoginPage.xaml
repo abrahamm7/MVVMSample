@@ -48,7 +48,6 @@
                         <Frame Style="{StaticResource FrameButtonStyle}">
                             <Button
                                 x:Name="LoginBtn"
-                                Clicked="LoginBtn_Clicked"
                                 Style="{StaticResource ButtonStyle}"
                                 Text="Log in" />
                         </Frame>
