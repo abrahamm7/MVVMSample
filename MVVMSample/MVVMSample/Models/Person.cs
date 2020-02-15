@@ -4,7 +4,9 @@ using System.Text;
 
 namespace MVVMSample.Models
 {
-    class Person
+    public class Person
     {
+        public string Name { get; set; }
+        public string Pass { get; set; }
     }
 }

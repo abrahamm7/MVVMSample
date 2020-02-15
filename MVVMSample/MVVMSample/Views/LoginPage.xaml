@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="SignBtn" Text="Sign Up" />
+        <ToolbarItem Command="{Binding Signupbtn}" Text="Sign Up" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>
@@ -34,14 +34,11 @@
                         Grid.Row="1"
                         Grid.ColumnSpan="2"
                         Padding="20">
+                        <Entry Placeholder="Username or email address" Text="{Binding Username, Mode=TwoWay}" />
                         <Entry
-                            x:Name="EntUserName"
-                            Placeholder="Username or email address"
-                            Text="{Binding Username, Mode=TwoWay}" />
-                        <Entry
-                            x:Name="EntPass"
                             IsPassword="True"
-                            Placeholder="Password" />
+                            Placeholder="Password"
+                            Text="{Binding Password, Mode=TwoWay}" />
                     </StackLayout>
                     <StackLayout
                         Grid.Row="2"
