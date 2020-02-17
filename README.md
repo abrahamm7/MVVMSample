@@ -1,4 +1,4 @@
-# MVVMSample
+# ScreenShots
 ![alt test](ScreenShots/LoginPage.png)
 ![alt test](ScreenShots/SignupPage.png)
 ![alt test](ScreenShots/Food.png)
