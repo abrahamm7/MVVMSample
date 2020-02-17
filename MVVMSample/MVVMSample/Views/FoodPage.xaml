@@ -9,7 +9,7 @@
     mc:Ignorable="d">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
+            <StackLayout Padding="15">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -17,7 +17,6 @@
                     </Grid.ColumnDefinitions>
 
                     <Frame x:Name="FrameOne" Style="{StaticResource FrameStyle}">
-
                         <StackLayout
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
@@ -25,6 +24,9 @@
                             <Image Source="cheeseburger" />
                             <Label Style="{StaticResource ColorText}" Text="Comida Rapida" />
                         </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapFrame" />
+                        </Frame.GestureRecognizers>
                     </Frame>
                     <Frame
                         x:Name="FrameTwo"
@@ -38,6 +40,9 @@
                             <Image Source="restaurant" />
                             <Label Style="{StaticResource ColorText}" Text="Restaurante" />
                         </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapFrame" />
+                        </Frame.GestureRecognizers>
                     </Frame>
                     <Frame
                         x:Name="FrameThree"
@@ -52,6 +57,9 @@
                             <Image Source="food" />
                             <Label Style="{StaticResource ColorText}" Text="Bebidas" />
                         </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapFrame" />
+                        </Frame.GestureRecognizers>
                     </Frame>
                     <Frame
                         x:Name="FrameFourth"
@@ -66,6 +74,9 @@
                             <Image Source="corn" />
                             <Label Style="{StaticResource ColorText}" Text="Vegetales" />
                         </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapFrame" />
+                        </Frame.GestureRecognizers>
                     </Frame>
                     <Frame
                         x:Name="FrameFive"
@@ -77,9 +88,12 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="Supermercado.png" />
+                            <Image Source="Supermartketcar" />
                             <Label Style="{StaticResource ColorText}" Text="Supermercado" />
                         </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapFrame" />
+                        </Frame.GestureRecognizers>
                     </Frame>
                     <Frame
                         x:Name="FrameSix"
@@ -94,6 +108,9 @@
                             <Image Source="mercado" />
                             <Label Style="{StaticResource ColorText}" Text="Mercado" />
                         </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapFrame" />
+                        </Frame.GestureRecognizers>
                     </Frame>
                 </Grid>
             </StackLayout>

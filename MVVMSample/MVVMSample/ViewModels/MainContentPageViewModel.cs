@@ -14,7 +14,7 @@ namespace MVVMSample.ViewModels
         //Constructor//
         public MainContentPageViewModel(Person people)
         {
-            Title = people.Name;
+            Title = $"Bienvenido {people.Name}";
         }
 
     }
