@@ -12,25 +12,20 @@ namespace MVVMSample.ViewModels
 {
     public class LoginPageViewModel: INotifyPropertyChanged
     {
-        Person person;
-        public event PropertyChangedEventHandler PropertyChanged;
-        public string Username { get; set; }
-        public string Password { get; set; }       
+        public Person Person { get; set; } = new Person();
+        public event PropertyChangedEventHandler PropertyChanged;     
         public ICommand Loginbtn { get { return new RelayCommand(LogIn); } }
         public ICommand Signupbtn { get { return new RelayCommand(SignUp); } }
         //Event to button LogIn//
         private async void LogIn() 
         {
-            if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
+            if (string.IsNullOrEmpty(Person.Name) || string.IsNullOrEmpty(Person.Pass))
             {
                 await App.Current.MainPage.DisplayAlert("Error", "Empty fields", "Ok");
             }
             else
-            {
-                person = new Person();
-                person.Name = Username;
-                person.Pass = Password;                
-                await App.Current.MainPage.Navigation.PushAsync(new MainContentPage(person));
+            {                         
+                await App.Current.MainPage.Navigation.PushAsync(new MainContentPage(Person));
             }
         }
         //Event to button SignUp//

@@ -24,16 +24,16 @@
                         Grid.ColumnSpan="3"
                         Padding="35">
                         <Image Aspect="AspectFit" Source="camera.png" />
-                        <Entry Placeholder="Username" Text="{Binding Name}" />
-                        <Entry Placeholder="Email address" Text="{Binding Email}" />
+                        <Entry Placeholder="Username" Text="{Binding Person.Name, Mode=TwoWay}" />
+                        <Entry Placeholder="Email address" Text="{Binding Person.Email, Mode=TwoWay}" />
                         <Entry
                             IsPassword="True"
                             Placeholder="Password"
-                            Text="{Binding Password}" />
+                            Text="{Binding Person.Pass, Mode=TwoWay}" />
                         <Entry
                             IsPassword="True"
-                            Placeholder="Password"
-                            Text="{Binding Repass}" />
+                            Placeholder="Confirm Password"
+                            Text="{Binding Person.Repass, Mode=TwoWay}" />
                         <Button
                             Command="{Binding Signupbtn}"
                             Style="{StaticResource ButtonStyle}"

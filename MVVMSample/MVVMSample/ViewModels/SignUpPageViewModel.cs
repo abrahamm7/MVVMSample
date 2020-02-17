@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using MVVMSample.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,23 +10,20 @@ namespace MVVMSample.ViewModels
 {
     public class SignUpPageViewModel: INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-        public string Name { get; set; }
-        public string Password { get; set; }
-        public string Repass { get; set; }
-        public string Email { get; set; }
+        public Person Person { get; set; } = new Person();
+        public event PropertyChangedEventHandler PropertyChanged;  
 
         public ICommand Signupbtn { get { return new RelayCommand(SignUp); } }
         //Event to Sign Up button//
         private async void SignUp()
         {
-            if (string.IsNullOrEmpty(Name) || string.IsNullOrEmpty(Password) || string.IsNullOrEmpty(Repass) || string.IsNullOrEmpty(Email))
+            if (string.IsNullOrEmpty(Person.Name) || string.IsNullOrEmpty(Person.Pass) || string.IsNullOrEmpty(Person.Repass) || string.IsNullOrEmpty(Person.Email))
             {
                 await App.Current.MainPage.DisplayAlert("Error","Empty fields","ok");
             }
             else
             {
-                await App.Current.MainPage.DisplayAlert("Congrats", $"Welcome {Name}", "ok");
+                await App.Current.MainPage.DisplayAlert("Congrats", $"Welcome {Person.Name}", "ok");
             }
         }
     }

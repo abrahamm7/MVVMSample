@@ -34,11 +34,11 @@
                         Grid.Row="1"
                         Grid.ColumnSpan="2"
                         Padding="20">
-                        <Entry Placeholder="Username or email address" Text="{Binding Username, Mode=TwoWay}" />
+                        <Entry Placeholder="Username or email address" Text="{Binding Person.Name, Mode=TwoWay}" />
                         <Entry
                             IsPassword="True"
                             Placeholder="Password"
-                            Text="{Binding Password, Mode=TwoWay}" />
+                            Text="{Binding Person.Pass, Mode=TwoWay}" />
                     </StackLayout>
                     <StackLayout
                         Grid.Row="2"
