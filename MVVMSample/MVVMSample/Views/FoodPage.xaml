@@ -25,7 +25,7 @@
                             <Label Style="{StaticResource ColorText}" Text="Comida Rapida" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapFrame" />
+                            <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameOne}" />
                         </Frame.GestureRecognizers>
                     </Frame>
                     <Frame
@@ -41,7 +41,7 @@
                             <Label Style="{StaticResource ColorText}" Text="Restaurante" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapFrame" />
+                            <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameTwo}" />
                         </Frame.GestureRecognizers>
                     </Frame>
                     <Frame
@@ -58,7 +58,7 @@
                             <Label Style="{StaticResource ColorText}" Text="Bebidas" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapFrame" />
+                            <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameThree}" />
                         </Frame.GestureRecognizers>
                     </Frame>
                     <Frame
@@ -75,7 +75,7 @@
                             <Label Style="{StaticResource ColorText}" Text="Vegetales" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapFrame" />
+                            <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameFourth}" />
                         </Frame.GestureRecognizers>
                     </Frame>
                     <Frame
@@ -92,7 +92,7 @@
                             <Label Style="{StaticResource ColorText}" Text="Supermercado" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapFrame" />
+                            <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameFive}" />
                         </Frame.GestureRecognizers>
                     </Frame>
                     <Frame
@@ -109,7 +109,7 @@
                             <Label Style="{StaticResource ColorText}" Text="Mercado" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapFrame" />
+                            <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameSix}" />
                         </Frame.GestureRecognizers>
                     </Frame>
                 </Grid>

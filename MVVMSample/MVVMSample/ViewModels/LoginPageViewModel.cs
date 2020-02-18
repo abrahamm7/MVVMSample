@@ -24,7 +24,7 @@ namespace MVVMSample.ViewModels
                 await App.Current.MainPage.DisplayAlert("Error", "Empty fields", "Ok");
             }
             else
-            {                         
+            {
                 await App.Current.MainPage.Navigation.PushAsync(new MainContentPage(Person));
             }
         }
