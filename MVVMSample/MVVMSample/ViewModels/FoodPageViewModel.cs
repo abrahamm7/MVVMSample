@@ -33,8 +33,8 @@ namespace MVVMSample.ViewModels
             itemMenu.Title = "Comida Rapida";
             itemMenu1.Image = "mercado.png";
             itemMenu1.Title = "Mercado";
-            itemMenu2.Image = "Supermarketcar.png";
-            itemMenu2.Title = "Sumpermercado";
+            itemMenu2.Image = "Supermartketcar.png";
+            itemMenu2.Title = "Supermercado";
             itemMenu3.Image = "corn.png";
             itemMenu3.Title = "Vegetales";
             itemMenu4.Image = "restaurant.png";
