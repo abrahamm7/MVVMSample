@@ -8,6 +8,7 @@ namespace MVVMSample.Models
     {
         public string Image { get; set; }
         public string Title { get; set; }
+       
         
     }
 }

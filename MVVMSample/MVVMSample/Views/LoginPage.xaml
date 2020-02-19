@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Command="{Binding Signupbtn}" Text="Sign Up" />
+        <ToolbarItem Command="{Binding Signupbtn}" Text="{Binding SignUptext.Title}" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>
@@ -34,10 +34,10 @@
                         Grid.Row="1"
                         Grid.ColumnSpan="2"
                         Padding="20">
-                        <Entry Placeholder="Username or email address" Text="{Binding Person.Name, Mode=TwoWay}" />
+                        <Entry Placeholder="{Binding PlaceholderName.Title}" Text="{Binding Person.Name, Mode=TwoWay}" />
                         <Entry
                             IsPassword="True"
-                            Placeholder="Password"
+                            Placeholder="{Binding PlaceholderPass.Title}"
                             Text="{Binding Person.Pass, Mode=TwoWay}" />
                     </StackLayout>
                     <StackLayout
@@ -47,15 +47,14 @@
                         HorizontalOptions="FillAndExpand">
                         <Frame Style="{StaticResource FrameButtonStyle}">
                             <Button
-                                x:Name="LoginBtn"
                                 Command="{Binding Loginbtn}"
                                 Style="{StaticResource ButtonStyle}"
-                                Text="Log in" />
+                                Text="{Binding LogIntext.Title}" />
                         </Frame>
                         <Label
                             HorizontalOptions="CenterAndExpand"
                             Style="{StaticResource ColorText}"
-                            Text="Login With" />
+                            Text="{Binding LogIntextwith.Title}" />
                     </StackLayout>
                     <StackLayout
                         Grid.Row="3"

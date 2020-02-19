@@ -13,6 +13,14 @@ namespace MVVMSample.ViewModels
     {
         public Person Person { get; set; } = new Person();
         public ItemMenu ItemMenu { get; set; } = new ItemMenu();
+        public ItemMenu Placeholder { get; set; } = new ItemMenu();
+        public ItemMenu LabelText { get; set; } = new ItemMenu();
+        public ItemMenu PlaceholderName { get; set; } = new ItemMenu();
+        public ItemMenu PlaceholderPass { get; set; } = new ItemMenu();
+        public ItemMenu PlaceholderEmail { get; set; } = new ItemMenu();
+        public ItemMenu SignUptext { get; set; } = new ItemMenu();
+        public ItemMenu TitlePage { get; set; } = new ItemMenu();
+
         public event PropertyChangedEventHandler PropertyChanged;  
 
         public ICommand Signupbtn { get; set; }
@@ -21,6 +29,14 @@ namespace MVVMSample.ViewModels
         {
             Signupbtn = new Command(SignUp);
             ItemMenu.Image = "camera.png";
+            Placeholder.Title = "Confirm Password";
+            LabelText.Title = "Terms of service";
+            PlaceholderName.Title = "Username";
+            PlaceholderPass.Title = "Password";
+            PlaceholderEmail.Title = "Email";
+            SignUptext.Title = "Sign Up";
+            TitlePage.Title = "Sign Up";
+           
         }
         //Event to Sign Up button//
         private async void SignUp()

@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="Sign Up"
+    Title="{Binding TitlePage.Title}"
     mc:Ignorable="d">
     <ContentPage.Content>
         <ScrollView>
@@ -23,25 +23,25 @@
                         Grid.Column="0"
                         Grid.ColumnSpan="3"
                         Padding="35">
-                        <Image Aspect="AspectFit" Source="camera.png" />
-                        <Entry Placeholder="Username" Text="{Binding Person.Name, Mode=TwoWay}" />
-                        <Entry Placeholder="Email address" Text="{Binding Person.Email, Mode=TwoWay}" />
+                        <Image Aspect="AspectFit" Source="{Binding ItemMenu.Image}" />
+                        <Entry Placeholder="{Binding PlaceholderName.Title}" Text="{Binding Person.Name, Mode=TwoWay}" />
+                        <Entry Placeholder="{Binding PlaceholderEmail.Title}" Text="{Binding Person.Email, Mode=TwoWay}" />
                         <Entry
                             IsPassword="True"
-                            Placeholder="Password"
+                            Placeholder="{Binding PlaceholderPass.Title}"
                             Text="{Binding Person.Pass, Mode=TwoWay}" />
                         <Entry
                             IsPassword="True"
-                            Placeholder="Confirm Password"
+                            Placeholder="{Binding Placeholder.Title}"
                             Text="{Binding Person.Repass, Mode=TwoWay}" />
                         <Button
                             Command="{Binding Signupbtn}"
                             Style="{StaticResource ButtonStyle}"
-                            Text="Sign Up" />
+                            Text="{Binding SignUptext.Title}" />
                         <Label
                             HorizontalOptions="CenterAndExpand"
                             Style="{StaticResource ColorText}"
-                            Text="Terms of Services" />
+                            Text="{Binding LabelText.Title}" />
                     </StackLayout>
                 </Grid>
             </StackLayout>

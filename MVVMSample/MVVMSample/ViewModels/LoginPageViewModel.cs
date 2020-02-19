@@ -18,6 +18,13 @@ namespace MVVMSample.ViewModels
         public ItemMenu github { get; set; } = new ItemMenu();
         public ItemMenu twitter { get; set; } = new ItemMenu();
         public ItemMenu google { get; set; } = new ItemMenu();
+        public ItemMenu PlaceholderName { get; set; } = new ItemMenu();
+        public ItemMenu PlaceholderPass { get; set; } = new ItemMenu();
+        public ItemMenu SignUptext { get; set; } = new ItemMenu();
+        public ItemMenu LogIntext { get; set; } = new ItemMenu();
+        public ItemMenu LogIntextwith { get; set; } = new ItemMenu();
+
+        //public ItemMenu Butt { get; set; } = new ItemMenu();
         public Person Person { get; set; } = new Person();
         public event PropertyChangedEventHandler PropertyChanged;     
         public ICommand Loginbtn { get; set; }
@@ -35,7 +42,13 @@ namespace MVVMSample.ViewModels
             google.Image = "google.png";
             twitter.Image = "twitter.png";
             github.Image = "github.png";
-            
+            PlaceholderName.Title = "Username or Email";
+            PlaceholderPass.Title = "Password";
+            SignUptext.Title = "Sign Up";
+            LogIntext.Title = "Log In";
+            LogIntextwith.Title = "Log In with";
+
+
         }
         //Event to button LogIn//
         private async void login()
