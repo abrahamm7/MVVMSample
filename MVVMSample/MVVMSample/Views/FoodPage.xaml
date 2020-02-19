@@ -21,7 +21,7 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="cheeseburger" />
+                            <Image Source="{Binding cheesburguer}" />
                             <Label Style="{StaticResource ColorText}" Text="Comida Rapida" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
@@ -37,7 +37,7 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="restaurant" />
+                            <Image Source="{Binding restaurante}" />
                             <Label Style="{StaticResource ColorText}" Text="Restaurante" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
@@ -54,7 +54,7 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="food" />
+                            <Image Source="{Binding food}" />
                             <Label Style="{StaticResource ColorText}" Text="Bebidas" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
@@ -71,7 +71,7 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="corn" />
+                            <Image Source="{Binding vegetales}" />
                             <Label Style="{StaticResource ColorText}" Text="Vegetales" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
@@ -88,7 +88,7 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="Supermartketcar" />
+                            <Image Source="{Binding Supermarketcar}" />
                             <Label Style="{StaticResource ColorText}" Text="Supermercado" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
@@ -105,7 +105,7 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="mercado" />
+                            <Image Source="{Binding mercado}" />
                             <Label Style="{StaticResource ColorText}" Text="Mercado" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
