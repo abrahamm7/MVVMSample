@@ -29,7 +29,7 @@
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
                         Aspect="AspectFit"
-                        Source="usermale.png" />
+                        Source="{Binding itemMenu.Image}" />
                     <StackLayout
                         Grid.Row="1"
                         Grid.ColumnSpan="2"
@@ -62,10 +62,10 @@
                         Grid.ColumnSpan="2"
                         HorizontalOptions="CenterAndExpand"
                         Orientation="Horizontal">
-                        <Image Source="facebook.png" />
-                        <Image Source="github.png" />
-                        <Image Source="twitter.png" />
-                        <Image Source="google.png" />
+                        <Image Source="{Binding facebook.Image}" />
+                        <Image Source="{Binding github.Image}" />
+                        <Image Source="{Binding twitter.Image}" />
+                        <Image Source="{Binding google.Image}" />
                     </StackLayout>
                 </Grid>
             </StackLayout>

@@ -5,15 +5,23 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace MVVMSample.ViewModels
 {
     public class SignUpPageViewModel: INotifyPropertyChanged
     {
         public Person Person { get; set; } = new Person();
+        public ItemMenu ItemMenu { get; set; } = new ItemMenu();
         public event PropertyChangedEventHandler PropertyChanged;  
 
-        public ICommand Signupbtn { get { return new RelayCommand(SignUp); } }
+        public ICommand Signupbtn { get; set; }
+
+        public SignUpPageViewModel()
+        {
+            Signupbtn = new Command(SignUp);
+            ItemMenu.Image = "camera.png";
+        }
         //Event to Sign Up button//
         private async void SignUp()
         {
