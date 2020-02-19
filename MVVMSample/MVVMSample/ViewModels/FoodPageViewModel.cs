@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using MVVMSample.Models;
 using MVVMSample.Views;
 using System;
 using System.Collections.Generic;
@@ -13,24 +14,33 @@ namespace MVVMSample.ViewModels
     {
         Frame frame = new Frame();
         public event PropertyChangedEventHandler PropertyChanged;
+        public ItemMenu itemMenu { get; set; } = new ItemMenu();
+        public ItemMenu itemMenu1 { get; set; } = new ItemMenu();
+        public ItemMenu itemMenu2 { get; set; } = new ItemMenu();
+        public ItemMenu itemMenu3 { get; set; } = new ItemMenu();
+        public ItemMenu itemMenu4 { get; set; } = new ItemMenu();
+        public ItemMenu itemMenu5 { get; set; } = new ItemMenu();
 
         public ICommand TapFrame { get; set; } 
-        public string cheesburguer { get; set; }
-        public string mercado { get; set; }
-        public string supermarket { get; set; }
-        public string vegetales { get; set; }
-        public string restaurante { get; set; }
-        public string food { get; set; }
+        
         
         public FoodPageViewModel()
         {
             TapFrame = new Command(Tap);
-            cheesburguer = "cheeseburger.png";
-            mercado = "mercado.png";
-            supermarket = "Supermarketcar.png";
-            vegetales = "corn.png";
-            restaurante = "restaurant.png";
-            food = "food.png";
+            
+
+            itemMenu.Image = "cheeseburger.png";
+            itemMenu.Title = "Comida Rapida";
+            itemMenu1.Image = "mercado.png";
+            itemMenu1.Title = "Mercado";
+            itemMenu2.Image = "Supermarketcar.png";
+            itemMenu2.Title = "Sumpermercado";
+            itemMenu3.Image = "corn.png";
+            itemMenu3.Title = "Vegetales";
+            itemMenu4.Image = "restaurant.png";
+            itemMenu4.Title = "Restaurantes";
+            itemMenu5.Image = "food.png";
+            itemMenu5.Title = "Bebidas";
         }
 
         private void Tap(object sender)

@@ -21,8 +21,8 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="{Binding cheesburguer}" />
-                            <Label Style="{StaticResource ColorText}" Text="Comida Rapida" />
+                            <Image Source="{Binding itemMenu.Image}" />
+                            <Label Style="{StaticResource ColorText}" Text="{Binding itemMenu.Title}" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameOne}" />
@@ -37,8 +37,8 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="{Binding restaurante}" />
-                            <Label Style="{StaticResource ColorText}" Text="Restaurante" />
+                            <Image Source="{Binding itemMenu4.Image}" />
+                            <Label Style="{StaticResource ColorText}" Text="{Binding itemMenu4.Title}" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameTwo}" />
@@ -54,8 +54,8 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="{Binding food}" />
-                            <Label Style="{StaticResource ColorText}" Text="Bebidas" />
+                            <Image Source="{Binding itemMenu5.Image}" />
+                            <Label Style="{StaticResource ColorText}" Text="{Binding itemMenu5.Title}" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameThree}" />
@@ -71,8 +71,8 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="{Binding vegetales}" />
-                            <Label Style="{StaticResource ColorText}" Text="Vegetales" />
+                            <Image Source="{Binding itemMenu3.Image}" />
+                            <Label Style="{StaticResource ColorText}" Text="{Binding itemMenu3.Title}" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameFourth}" />
@@ -88,8 +88,8 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="{Binding Supermarketcar}" />
-                            <Label Style="{StaticResource ColorText}" Text="Supermercado" />
+                            <Image Source="{Binding itemMenu2.Image}" />
+                            <Label Style="{StaticResource ColorText}" Text="{Binding itemMenu2.Title}" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameFive}" />
@@ -105,8 +105,8 @@
                             HorizontalOptions="CenterAndExpand"
                             Orientation="Vertical"
                             VerticalOptions="CenterAndExpand">
-                            <Image Source="{Binding mercado}" />
-                            <Label Style="{StaticResource ColorText}" Text="Mercado" />
+                            <Image Source="{Binding itemMenu1.Image}" />
+                            <Label Style="{StaticResource ColorText}" Text="{Binding itemMenu1.Title}" />
                         </StackLayout>
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding TapFrame}" CommandParameter="{x:Reference FrameSix}" />
